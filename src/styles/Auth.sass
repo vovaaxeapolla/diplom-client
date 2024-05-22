@@ -76,21 +76,41 @@
         font-size: 1.25rem
 
         &:focus, &:not(:placeholder-shown), &:-webkit-autofill
-            &+span
+            &+.form-input__placeholder
                 translate: 0 -.5rem
                 font-size: .75rem
 
         &:focus
-            &+span
+            border-color: var(--accent-color)
+            &+.form-input__placeholder
                 color: var(--accent-color)
 
         &::placeholder
             opacity: 0
 
+        &__error
+            color: #ff5c5c
+            font-size: .75rem
+            position: absolute
+            bottom: -1rem
+            left: 0
+
+        &-error
+            border-color: #ff5c5c
+            background-color: #ffd5d5
+
+            &+.form-input__placeholder
+                color: #ff5c5c
+
+            &:focus
+                border-color: #ff5c5c
+                &+.form-input__placeholder
+                    color: #ff5c5c
+
         &__label
             width: 100%
             position: relative
-            margin-bottom: 1rem
+            margin-bottom: 2rem
 
         &__placeholder
             position: absolute
@@ -100,9 +120,6 @@
             pointer-events: none
             transition: translate .25s, font-size .25s, color .25s
             user-select: none
-
-        &:focus
-            border-color: var(--accent-color)
 
 @media screen and (width < 768px)
     .form
