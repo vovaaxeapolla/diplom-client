@@ -1,5 +1,4 @@
 .auth
-    min-height: 100vh
     display: flex
     justify-content: center
 
@@ -32,12 +31,16 @@
         font-weight: bold
         margin-bottom: 1rem
         user-select: none
+        transition: background-color .25s, color .25s
+
+        &:hover
+            background-color: var(--always-black)
+            color: var(--always-white)
 
         &__submit
             background-color: var(--accent-color)
             color: var(--text-invert-color)
             cursor: pointer
-            transition: background-color .2s
 
             &:hover
                 background-color: var(--accent-secondary-color)

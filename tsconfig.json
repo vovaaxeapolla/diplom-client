@@ -27,11 +27,23 @@
       "@components/*": [
         "src/components/*"
       ],
+      "@ui": [
+        "src/components/ui/index"
+      ],
+      "@ui/*": [
+        "src/components/ui/*"
+      ],
       "@pages": [
         "src/pages/index"
       ],
       "@pages/*": [
         "src/pages/*"
+      ],
+      "@srores": [
+        "src/stores/index"
+      ],
+      "@stores/*": [
+        "src/stores/*"
       ],
       "@styles/*": [
         "src/styles/*"

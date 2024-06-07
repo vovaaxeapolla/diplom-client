@@ -92,7 +92,7 @@ export function Register() {
                         Войти
                     </button>
                 </form>
-                <Link to="/auth/login" className="form-btn form-btn-register">
+                <Link to="/auth/login" className="form-btn">
                     Вход в профиль
                 </Link>
             </main>

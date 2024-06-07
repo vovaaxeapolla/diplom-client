@@ -1,0 +1,123 @@
+.header
+    top: 0
+    position: sticky
+    background: var(--bg-main-color)
+    box-shadow: 0 0 1rem #0000000e
+    user-select: none
+
+    .nav
+        display: flex
+        align-items: center
+        height: var(--header-height)
+        position: sticky
+        top: 0
+        gap: 1rem
+        width: var(--content-width)
+        margin: 0 auto
+
+        &__link
+            padding: .5rem 1rem
+            border-radius: 1.75rem
+            line-height: 1.5rem
+            position: relative
+            display: block
+            font-size: 1.125rem
+            outline: none
+
+            &:last-child
+                margin-left: auto
+
+            &:focus
+                outline: 2px solid var(--text-main-color)
+
+            &:hover
+                background-color: var(--bg-secondary-color)
+
+        &__active
+            color: var(--accent-color)
+            background-color: var(--accent-transparent-color)
+
+            &:hover
+                background-color: var(--accent-transparent-secondary-color)
+
+            &:focus
+                outline: 2px solid var(--accent-color)
+
+.scroll
+    &-value
+        position: fixed
+        z-index: 1000
+        background: var(--accent-color)
+        top: 0
+        height: 2px
+        width: 0
+        left: 0
+
+    &-top
+        width: 4rem
+        height: 4rem
+        border-radius: 50%
+        position: fixed
+        bottom: 1rem
+        left: 1rem
+        border: none
+        background-color: var(--bg-main-color)
+        fill: var(--always-black)
+        transition: background-color .25s, fill .25s
+
+        svg
+            height: 2.5rem
+            width: 2.5rem
+
+        &:hover
+            fill: var(--always-white)
+            background-color: var(--always-black)
+
+.ui
+    &-bold
+        font-weight: bold
+
+    &-card
+        padding: 1rem
+        background: var(--bg-main-color)
+        padding: 1rem
+        border-radius: 1rem
+        box-shadow: 0 0 1rem #0000000e
+
+    &-btn
+        display: block
+        font-size: 1rem
+        outline: none
+        border: none
+        background-color: transparent
+        cursor: pointer
+        height: 3rem
+        border-radius: 1rem
+        width: 100%
+        transition: color .25s, background-color .25s
+        padding: .75rem
+        line-height: 1.5rem
+
+        &:hover
+            background-color: var(--bg-secondary-accent-color)
+
+        &-secondary
+            border: 1px solid var(--accent-color)
+            color: var(--accent-color)
+
+            &:hover
+                color: var(--always-white)
+                background-color: var(--always-black)
+
+        &-accent
+            color: var(--always-white)
+            background-color: var(--accent-color)
+
+            &:hover
+                background-color: var(--always-black)
+
+        &-dangerous
+            color: var(--text-dangerous-color)
+
+            &:hover
+                background-color: var(--bg-dangerous-color)

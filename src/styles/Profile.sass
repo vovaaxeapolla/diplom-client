@@ -1,0 +1,56 @@
+.profile
+    display: flex
+    &__leftbar
+        display: flex
+        flex-direction: column
+        min-height: calc( 100vh - var(--header-height) )
+        width: 240px
+        background-color: var(--bg-main-color)
+
+    &__info
+        padding: 0.5rem
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+
+    &__role
+        color: var(--text-disable-color)
+
+    &__img
+        border-radius: 50%
+        overflow: hidden
+        width: 10rem
+        height: 10rem
+        border: 2px solid var(--accent-color)
+        margin-bottom: 1rem
+
+        img
+            object-fit: cover
+            width: 100%
+            height: 100%
+
+    &__nav
+        display: flex
+        flex-direction: column
+        gap: 0.5rem
+        padding: 0.5rem
+        height: 100%
+
+    &__navlink
+        width: 100%
+        height: 3rem
+        border-radius: 1rem
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &:hover
+            background-color: var(--bg-secondary-accent-color)
+
+    &__exit
+        margin-top: auto
+.back
+    position: fixed
+    right: 1rem
+    top: 1rem

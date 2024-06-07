@@ -54,7 +54,7 @@ export function Login() {
                         Войти
                     </button>
                 </form>
-                <Link to="/auth/register" className="form-btn form-btn-register">
+                <Link to="/auth/register" className="form-btn">
                     Создать профиль
                 </Link>
             </main>

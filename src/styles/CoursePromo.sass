@@ -1,0 +1,52 @@
+.course-promo
+    display: flex
+    flex-direction: column
+
+    &__header
+        background: var(--accent-color)
+        color: var(--text-invert-color)
+
+        &__wrapper
+            margin: 0 auto
+            width: var(--content-width)
+            padding: 2rem 0
+
+            h1, p
+                margin-bottom: 1rem
+                width: calc( 100% - 320px )
+
+    &__main
+        padding: 2rem 0
+        margin: 0 auto
+        width: var(--content-width)
+        display: flex
+        gap: 2rem
+        justify-content: flex-start
+        align-items: flex-start
+
+    &__paragraph
+        margin-top: 3rem
+
+        h2
+            margin-bottom: .5rem
+
+        p
+            font-family: Roboto, sans-serif
+            font-size: 16px
+            color: #222
+            line-height: 1.6
+            word-wrap: break-word
+            word-break: break-word
+
+    &__rightbar
+        top: calc(1rem + var(--header-height))
+        position: sticky
+        min-width: 240px
+        display: flex
+        flex-direction: column
+        gap: 1rem
+
+    &__structure
+        display: flex
+        flex-direction: column
+        gap: 0.5rem
